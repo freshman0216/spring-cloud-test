@@ -1,0 +1,12 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/freshman0216/spring-cloud-test
+          search-paths: cloud-config-server/src/main/resources
+          default-label: develop
