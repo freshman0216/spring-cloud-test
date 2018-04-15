@@ -9,6 +9,8 @@
 	<modules>
 		<module>cloud-config-server</module>
 		<module>cloud-zipkin-server</module>
+        <module>apiA-service</module>
+		<module>apiB-service</module>
 	</modules>
 	<packaging>pom</packaging>
 
