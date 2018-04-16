@@ -11,9 +11,18 @@ public class GitConfigControler {
     @Value("${URL.AgentCloud}")
     String agentCloudUrl;
 
-    @RequestMapping("/GitConfig/GetConnfig")
-    public String GetCongigServerName()
+    @Value("${IP.Redis}")
+    String redisIP;
+
+    @RequestMapping("/GitConfig/AgentCloudUrl")
+    public String GetCongigAgentCloudUrl()
     {
         return agentCloudUrl;
+    }
+
+    @RequestMapping("/GitConfig/RedisIP")
+    public String GetCongigRedisIP()
+    {
+        return redisIP;
     }
 }

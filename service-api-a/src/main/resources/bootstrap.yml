@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8010/
-      #profile: default
+      profile: pro
       label: develop
       enabled: true
   application:
