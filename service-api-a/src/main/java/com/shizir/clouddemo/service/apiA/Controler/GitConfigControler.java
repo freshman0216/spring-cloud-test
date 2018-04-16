@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GitConfigControler {
 
-    @Value("${spring.application.name}")
-    String configServerName;
+    @Value("${URL.AgentCloud}")
+    String agentCloudUrl;
 
     @RequestMapping("/GitConfig/GetConnfig")
     public String GetCongigServerName()
     {
-        return configServerName;
+        return agentCloudUrl;
     }
 }

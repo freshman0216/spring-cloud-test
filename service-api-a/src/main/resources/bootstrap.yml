@@ -1,10 +1,11 @@
 server:
-  port: 8080
+  port: 8090
 spring:
-  application:
-    name: apia-service
   cloud:
     config:
       uri: http://localhost:8010/
       #profile: default
       label: develop
+      enabled: true
+  application:
+    name: apia-service
