@@ -8,5 +8,5 @@ spring:
       server:
         git:
           uri: https://github.com/freshman0216/spring-cloud-test
-          search-paths: cloud-config-server/src/main/resources
-          default-label: develop
+          search-paths: cloud-config-server/ConfigFiles/agent.fang.com
+          default-label: master

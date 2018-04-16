@@ -1,0 +1,6 @@
+URL:
+  AgentCloud: http://agent.yun.fang.com
+  KehuCloud: http://kehu.yun.fang.com
+IP:
+  Redis: 10.0.0.1
+  MemCache: 10.0.0.2
