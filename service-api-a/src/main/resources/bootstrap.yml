@@ -8,4 +8,4 @@ spring:
       label: develop
       enabled: true
   application:
-    name: apia-service
+    name: service-api-a
