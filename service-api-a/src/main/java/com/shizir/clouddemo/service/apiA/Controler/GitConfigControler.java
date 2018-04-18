@@ -15,13 +15,13 @@ public class GitConfigControler {
     String redisIP;
 
     @RequestMapping("/GitConfig/AgentCloudUrl")
-    public String GetCongigAgentCloudUrl()
+    public String GetConfigAgentCloudUrl()
     {
         return agentCloudUrl;
     }
 
     @RequestMapping("/GitConfig/RedisIP")
-    public String GetCongigRedisIP()
+    public String GetConfigRedisIP()
     {
         return redisIP;
     }

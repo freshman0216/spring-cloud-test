@@ -1,10 +1,12 @@
-package com.shizir.clouddemo.service.apiB.Controler;
+package com.shizir.clouddemo.service.apiB.controler;
 
-import com.sun.org.apache.bcel.internal.generic.RETURN;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Apollo Config配置示例
+ */
 @RestController
 public class ApolloConfigControler {
 
