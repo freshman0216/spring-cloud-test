@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApolloConfigControler {
 
-    @Value("${URL.AgentCloud}")
+    @Value("${URL.AgentCloud:}")
     String agentCloudUrl;
 
-    @Value("${IP.Redis}")
+    @Value("${IP.Redis:}")
     String redisIP;
 
     @Value("${PassportInterfaceUrl:}")

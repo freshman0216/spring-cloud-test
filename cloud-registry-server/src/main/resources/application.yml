@@ -1,0 +1,19 @@
+server:
+  host : localhost
+  port: 8060
+spring:
+  application:
+    name: cloud-registry-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${server.host}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+management:
+  security:
+  basic:
+    enabled: true
+  user:
+    name: tester
+    password: testeradmin
