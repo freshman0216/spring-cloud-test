@@ -1,0 +1,15 @@
+server:
+  port: 8090
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8010/
+      profile: pro
+      label: develop
+      enabled: true
+  application:
+    name: service-api-a
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8060/eureka/

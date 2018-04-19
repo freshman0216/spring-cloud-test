@@ -7,8 +7,11 @@
 	<artifactId>spring-cloud-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
+		<module>cloud-registry-server</module>
 		<module>cloud-config-server</module>
 		<module>cloud-zipkin-server</module>
+		<module>service-api-a</module>
+		<module>service-api-b</module>
 	</modules>
 	<packaging>pom</packaging>
 
