@@ -3,3 +3,12 @@ server:
 spring:
   application:
     name: zipkin-server
+    zipkin:
+      enabled: true
+    sleuth:
+      sampler:
+        percentage: 1.0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8060/eureka/
