@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: service-api-b
+  zipkin:
+    base-url: http://localhost:8020
 apollo:
   bootstrap:
     enabled: true
