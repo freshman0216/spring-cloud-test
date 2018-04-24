@@ -1,6 +1,7 @@
 package com.shizir.clouddemo.service.apiB.service;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.context.annotation.Primary;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @FeignClient(value = "service-api-a", fallback = ApiAGitConfigHystrix.class)
 //@FeignClient(value = "service-api-a")
+@Primary
 public interface ApiAGitConfig {
     @RequestMapping(method = RequestMethod.GET, value = "/GitConfig/AgentCloudUrl")
     String GetConfigAgentCloudUrl();
