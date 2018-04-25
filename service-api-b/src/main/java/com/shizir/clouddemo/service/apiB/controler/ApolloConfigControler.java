@@ -1,5 +1,7 @@
 package com.shizir.clouddemo.service.apiB.controler;
 
+import com.ctrip.framework.apollo.model.ConfigChangeEvent;
+import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,5 +37,13 @@ public class ApolloConfigControler {
     public String GetPassUrl()
     {
         return passportInterfaceUrl;
+    }
+
+    @ApolloConfigChangeListener
+    private void someChangeHandler(ConfigChangeEvent changeEvent) {
+        if (changeEvent.isChanged("IP.Redis")) {
+            //refreshTimeout();
+            changeEvent.getChange("IP.Redis");
+        }
     }
 }
