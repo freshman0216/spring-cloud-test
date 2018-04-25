@@ -1,5 +1,6 @@
 package com.shizir.clouddemo.service.apiB.controler;
 
+import com.ctrip.framework.apollo.model.ConfigChange;
 import com.ctrip.framework.apollo.model.ConfigChangeEvent;
 import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import org.springframework.beans.factory.annotation.Value;
@@ -41,9 +42,11 @@ public class ApolloConfigControler {
 
     @ApolloConfigChangeListener
     private void someChangeHandler(ConfigChangeEvent changeEvent) {
-        if (changeEvent.isChanged("IP.Redis")) {
+        String key = "URL.AgentCloud";
+        if (changeEvent.isChanged(key)) {
             //refreshTimeout();
-            changeEvent.getChange("IP.Redis");
+            ConfigChange change = changeEvent.getChange(key);
+            agentCloudUrl = change.getNewValue();
         }
     }
 }
