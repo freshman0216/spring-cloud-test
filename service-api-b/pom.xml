@@ -28,12 +28,12 @@
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-client</artifactId>
-            <version>0.6.0</version>
+            <version>0.10.2</version>
         </dependency>
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-core</artifactId>
-            <version>0.6.0</version>
+            <version>0.10.2</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>

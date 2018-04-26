@@ -40,7 +40,8 @@ public class ApolloConfigControler {
         return passportInterfaceUrl;
     }
 
-    @ApolloConfigChangeListener
+    //0.10.0以上版本不需要这段代码就可以自动更新了
+    /*@ApolloConfigChangeListener
     private void someChangeHandler(ConfigChangeEvent changeEvent) {
         String key = "URL.AgentCloud";
         if (changeEvent.isChanged(key)) {
@@ -48,5 +49,5 @@ public class ApolloConfigControler {
             ConfigChange change = changeEvent.getChange(key);
             agentCloudUrl = change.getNewValue();
         }
-    }
+    }*/
 }
