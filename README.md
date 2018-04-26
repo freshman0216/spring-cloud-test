@@ -15,6 +15,8 @@ springcloud测试，主要包含注册中心、网关、配置、监控等
 
 ## 5.service-api-a
 * ApolloConfigControler 阿波罗配置测试
+_* ApolloBean/ApolloConfig 测试apollo获取配置对象实时更新问题_
+* TestConfigControler 测试@Bean/@Configuration注解生命周期
 * ApiAFeignControler  Feign方式调用服务测试
 
 

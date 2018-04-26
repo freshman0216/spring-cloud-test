@@ -27,6 +27,7 @@ public class ApolloConfigControler {
     @Value("${PassportInterfaceUrl:}")
     String passportInterfaceUrl;
 
+    //值可以自动更新，但要是用Apollo 0.10.0以上版本
     @RequestMapping("/ApolloConfig/AgentCloudUrl")
     public String GetCongigAgentCloudUrl()
     {
