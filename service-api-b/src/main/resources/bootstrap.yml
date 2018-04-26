@@ -9,7 +9,7 @@ apollo:
   bootstrap:
     enabled: true
     # will inject 'application' and 'sfb_server.Common.OpenCitys' namespaces in bootstrap phase
-    namespaces: application,sfb_server.Common.InterfaceUrl
+    namespaces: application,TEST1.Fang.SFB.Framework
 eureka:
   client:
     serviceUrl:
