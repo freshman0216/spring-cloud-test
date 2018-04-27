@@ -10,11 +10,11 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  * 启用了：
  * 1. 服务发现和注册
  * 2. 开启Feign方式调用restful api
- * 3. 开启apollo 配置
+ * 3. 开启apollo 配置(支持公共命名空间)
  */
 @EnableDiscoveryClient
 @EnableFeignClients
-@EnableApolloConfig
+@EnableApolloConfig({"TEST1.Fang.SFB.Framework"})
 @SpringBootApplication
 public class ServiceApiBApplication {
     public static void main(String[] args) {
