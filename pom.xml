@@ -12,6 +12,7 @@
 		<module>cloud-zipkin-server</module>
 		<module>service-api-a</module>
 		<module>service-api-b</module>
+		<module>service-api-c</module>
 	</modules>
 	<packaging>pom</packaging>
 
